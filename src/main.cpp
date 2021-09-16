@@ -7,10 +7,11 @@ int main()
 {
     //title will be changed in windows
     int selection;
+    system("clear");
     cout << "Welcome to ConAIO\n";
     cout << " \n";
     cout << "1 - Pinger \n";
-    cout << "2 - Test Command \n";
+    cout << "2 - IP Lookup \n";
     cout << "3 - Settings \n";
     cin >> selection;
 
