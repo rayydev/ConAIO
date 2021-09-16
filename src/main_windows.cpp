@@ -15,7 +15,7 @@ void menu();
 
 int main()
 {
-    //title will be changed in windows
+    SetConsoleTitleA("ConAIO 1.0.0")
     menu();
 }
 
@@ -27,6 +27,7 @@ void menu()
     cout << "1 - Pinger \n";
     cout << "2 - Test Command \n";
     cout << "3 - Settings \n";
+    cout << "4 - Exit \n";
     cin >> selection;
 
     if(selection == 1)
@@ -56,7 +57,13 @@ void menu()
         }
         if(optionselect = 1)
         {
-
+            string titlechange;
+            cin >> titlechange;
+            SetConsoleTitleA(titlechange);
         }
+    if(selection == 4)
+    {
+        system("pause");
+    }
     }       
 }
