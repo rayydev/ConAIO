@@ -1,12 +1,26 @@
-<<<<<<< HEAD
 #include <iostream>
 //#include <windows.h>
 
+/*#define NC "\e[0m"
+#define RED "\e[0;31m"
+#define GRN "\e[0;32m"
+#define CYN "\e[0;36m"
+#define REDB "\e[41m"
+*/
+
+
 using namespace std;
+
+void menu();
 
 int main()
 {
     //title will be changed in windows
+    menu();
+}
+
+void menu()
+{
     int selection;
     cout << "Welcome to ConAIO\n";
     cout << " \n";
@@ -29,59 +43,20 @@ int main()
 
     if(selection == 3)
     {
+        int optionselect;
         system("clear");
         cout << "Settings \n";
-    }
-    else 
-    {
-        //system("clear");
-        //cout << "Wrong Number! \n";
-        //cout << " \n";
-        
-        //return 0;
-    }
-=======
-#include <iostream>
-//#include <windows.h>
-
-using namespace std;
-
-int main()
-{
-    //title will be changed in windows
-    int selection;
-    system("clear");
-    cout << "Welcome to ConAIO\n";
-    cout << " \n";
-    cout << "1 - Pinger \n";
-    cout << "2 - IP Lookup \n";
-    cout << "3 - Settings \n";
-    cin >> selection;
-
-    if(selection == 1)
-    {
-        //here will be pinger!
-    }
-
-    if(selection == 2)
-    {
-        system("clear");
-        cout << "test! \n";
         cout << " \n";
-    }
+        cout << "1) Change title window \n";
+        cin >> optionselect;
+        if(optionselect == 0)
+        {
+            system("clear");
+            menu();
+        }
+        if(optionselect = 1)
+        {
 
-    if(selection == 3)
-    {
-        system("clear");
-        cout << "Settings \n";
-    }
-    else 
-    {
-        //system("clear");
-        //cout << "Wrong Number! \n";
-        //cout << " \n";
-        
-        //return 0;
-    }
->>>>>>> d647093d5a450b726eaea19cf2e65c6a5e6470ea
+        }
+    }       
 }
