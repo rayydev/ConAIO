@@ -12,6 +12,7 @@
 using namespace std;
 
 void menu();
+void settings();
 
 int main()
 {
@@ -60,10 +61,37 @@ void menu()
             string titlechange;
             cin >> titlechange;
             SetConsoleTitleA(titlechange);
+            cout << "Title changed! \n";
+            system("sleep 1500");
+            system("cls");
+            settings();
         }
+    }
     if(selection == 4)
     {
         system("pause");
     }
+
+    void settings()
+    {
+        int optionselect;
+        system("cls");
+        cout << "Settings \n";
+        cout << " \n";
+        cout << "1) Change title window \n";
+        cin >> optionselect;
+        if(optionselect == 0)
+        {
+            system("cls");
+            menu();
+        }
+        if(optionselect = 1)
+        {
+            string titlechange;
+            cin >> titlechange;
+            SetConsoleTitleA(titlechange);
+            cout << "Title changed! \n";
+
+        }
     }       
 }
