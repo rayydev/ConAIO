@@ -12,6 +12,7 @@
 using namespace std;
 
 void menu();
+void settings();
 
 int main()
 {
@@ -47,6 +48,7 @@ void menu()
         system("clear");
         cout << "Settings \n";
         cout << " \n";
+        cout << "0) Back to menu \n";
         cout << "1) Change title window \n";
         cin >> optionselect;
         if(optionselect == 0)
@@ -56,7 +58,19 @@ void menu()
         }
         if(optionselect = 1)
         {
-
+            system("clear");
+            cout << "Sorry, but option for changing title for windows is only avable in winodws build :( \n";
+            cout << " \n";
+            cout << "Type 0 to quit ConAIO \n";
+            cout << " \n";
+            cin >> optionselect;
         }
-    }       
+        /*else
+        {
+            cout << "Wrong number! ConAIO closed. \n";
+            return;
+            
+        }
+        */
+    }          
 }
